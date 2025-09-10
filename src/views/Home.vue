@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { qiankunWindow } from 'vite-plugin-qiankun/dist/helper'
-import { useRouter, useRoute } from 'vue-router'
+import { useRoute } from 'vue-router'
 
 const route = useRoute()
 const handleClick = () => {
