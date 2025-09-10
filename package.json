@@ -19,6 +19,7 @@
     "sass": "^1.92.1",
     "typescript": "~5.8.3",
     "vite": "^7.1.2",
+    "vite-plugin-css-injected-by-js": "^3.5.2",
     "vite-plugin-qiankun": "^1.0.15",
     "vue-tsc": "^3.0.5"
   }

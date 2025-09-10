@@ -2,6 +2,7 @@ import { defineConfig, loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import qiankun from 'vite-plugin-qiankun';
 import path from 'path'
+import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js'
 
 const useDevMode = true; // 开启时禁用 HMR
 
@@ -9,6 +10,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '') // 加载所有变量（包括非 VITE_ 前缀）
   return {
     plugins: [
+      cssInjectedByJsPlugin(),
       vue(),
       qiankun('vue-app', { useDevMode })
     ],
